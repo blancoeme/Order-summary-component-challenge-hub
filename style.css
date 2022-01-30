@@ -1,0 +1,131 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background: url('images/pattern-background-desktop.svg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-y: 0;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif; 
+}
+main, .heading, .description, .price, button {
+    box-sizing: border-box;
+}
+
+main {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    text-align:center;
+    border: 1px solid #f8f9fe;
+    border-radius:15px;
+}
+
+.header_image {
+    width:100%;
+    height:146px;
+    margin:0;
+    padding:0;
+    background: url('images/illustration-hero.svg');
+    background-size: contain;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.main_content {
+    padding:30px 22px 0 22px;
+}
+.heading{
+    width:100%;
+    margin-bottom:22px;
+    font-weight:900;
+    color:232e55;
+    font-size:1.5rem;
+}
+.description {
+    width:100%;
+    margin-bottom:22px;
+    color:#878ba6;
+    font-size:0.9rem;
+    line-height:1.5em;
+    padding: 0 7px 0 7px;
+}
+.price{
+    width:100%;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#f8f9fe;
+    margin-bottom:22px;
+    border-radius:10px;
+}
+
+.price_icon{
+    display:inline-block;
+    width:75px;
+    aspect-ratio:1;
+    background-image:url('images/icon-music.svg');
+    background-size:cover;
+    margin-right: 15px;
+}
+.price_info{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:left;
+}
+span.price_info_heading{
+    font-weight:900;
+    line-height:1.6em;
+    color:#27324c;
+    font-size:0.8rem;
+}
+span.prcie_value{
+    color:#9ca3b5;
+    font-size:0.8rem;
+}
+
+.price_change{
+    color:hsl(245, 75%, 52%);
+    text-decoration:underline;
+    font-weight:700;
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size:0.8rem;
+}
+
+button.proceed {
+    width:100%;
+    padding:15px;
+    border:0;
+    border-radius:10px;
+    font-weight:700;
+    width:100%;
+    background-color:hsl(245, 75%, 52%);
+    color:white;
+    border:0;
+    box-shadow: 0 10px 15px #c1bae2;
+    font-size:0.7rem;
+}
+
+.cancel_button {
+    height:50px;
+    margin-top: 22px;
+    font-weight:900;
+    color:#6d7489;
+    font-size:0.7rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 25px;
+}
